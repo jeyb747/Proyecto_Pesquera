@@ -90,9 +90,7 @@ Diego Alejandro Benítez – Ficha 3171084
 
 🌐 Sitio Desplegado
 
-(Agrega aquí el enlace cuando lo publiques)
-👉 URL del sitio: https://tusitio.com
-
+👉 URL del sitio:https://jeyb747.github.io/Proyecto_Pesquera/
 🧾 Licencia
 
 Este proyecto está bajo la licencia MIT. Puedes usarlo y modificarlo libremente.
