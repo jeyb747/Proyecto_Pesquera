@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito | La Pesquera</title>
+
+  <!-- 🎨 Estilos -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/carro.css">
+</head>
+
+<body>
+  <!-- ====== ENCABEZADO ====== -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">La Pesquera</h1>
+
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+
+      <nav id="nav-menu" class="nav-menu">
+        <a href="../index.html">Inicio</a>
+        <a href="login.html">Iniciar sesión</a>
+        <a href="menu.html">Menú</a>
+        <a href="domicilio.html">Domicilio</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="carrito-link active">🛒 Carrito <span id="contador-carrito">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== CONTENIDO PRINCIPAL ====== -->
+  <main>
+    <h1>Carrito de Compras</h1>
+
+    <div class="carrito-container" id="carrito-container">
+      <!-- Productos se cargan con JS -->
+    </div>
+
+    <div class="total" id="total">Total: $0</div>
+
+    <div class="acciones">
+      <button class="btn" id="vaciarCarrito">Vaciar carrito</button>
+      <button class="btn" id="btnPagar" style="background:#27ae60;">Pagar</button>
+      <a href="menu.html" class="btn">Volver al menú</a>
+    </div>
+  </main>
+
+  <!-- ====== PIE DE PÁGINA ====== -->
+  <footer>
+    <p>© 2025 La Pesquera · Todos los derechos reservados</p>
+  </footer>
+
+  <!-- ====== MODAL DE PAGO ====== -->
+  <div id="modalPago" class="modal-pago oculto">
+    <div class="modal-contenido">
+      <span id="cerrarPago" class="cerrar-pago">✕</span>
+
+      <h2>💳 Selecciona un método de pago</h2>
+
+      <div class="metodos">
+        <button class="metodo" data-metodo="efectivo">Efectivo</button>
+        <button class="metodo" data-metodo="nequi">nequi</button>
+        <button class="metodo" data-metodo="tarjeta">Tarjeta</button>
+      </div>
+
+      <div id="opcionesPago" class="opciones"></div>
+
+    </div>
+  </div>
+
+  <!-- ⚙️ Scripts -->
+  <script defer src="../js/script.js"></script>
+  <script defer src="../js/carrito.js"></script>
+</body>
+</html>

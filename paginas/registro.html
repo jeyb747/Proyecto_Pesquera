@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro | La Pesquera</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/registro.css">
+
+  <!-- JS -->
+  <script defer src="../js/registro.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container nav-content">
+    <h1 class="logo">La Pesquera</h1>
+
+    <nav class="nav-menu">
+      <a href="../index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="domicilio.html">Domicilio</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="historial.html">Historial</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="login.html">Iniciar sesión</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container registro-box">
+
+  <h2>📝 Crear cuenta</h2>
+  <p>Regístrate para poder reservar, pedir domicilio y usar el carrito de forma completa.</p>
+
+  <form id="formRegistro" class="registro-form">
+
+    <div class="campo">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" required>
+    </div>
+
+    <div class="campo">
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" required>
+    </div>
+
+    <div class="campo">
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" required pattern="[0-9]{7,10}">
+    </div>
+
+    <div class="campo">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" required minlength="4">
+    </div>
+
+    <button type="submit" class="btn-registrar">Crear cuenta</button>
+  </form>
+
+  <p class="login-link">
+    ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+  </p>
+
+  <div id="mensajeExito" class="mensaje-exito">
+    Cuenta creada correctamente ✔
+  </div>
+
+  <div id="mensajeError" class="mensaje-error">
+    Este correo ya está registrado ❌
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 La Pesquera · Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

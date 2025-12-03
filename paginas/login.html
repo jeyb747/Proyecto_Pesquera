@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión | La Pesquera</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/login.css">
+
+  <!-- JS -->
+  <script defer src="../js/login.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container nav-content">
+    <h1 class="logo">La Pesquera</h1>
+    <nav class="nav-menu">
+      <a href="../index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="domicilio.html">Domicilio</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="historial.html">Historial</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="login.html" class="active">Iniciar sesión</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container login-box">
+  <h2>🔐 Iniciar sesión</h2>
+
+  <form id="formLogin" class="login-form">
+    <div class="campo">
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" required>
+    </div>
+
+    <div class="campo">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" required>
+    </div>
+
+    <button type="submit" class="btn-login">Ingresar</button>
+  </form>
+
+  <p class="register-link">
+    ¿No tienes cuenta?
+    <a href="registro.html">Crea una aquí</a>
+  </p>
+
+  <div id="mensajeError" class="mensaje-error">Credenciales incorrectas</div>
+</main>
+
+<footer>
+  <p>© 2025 La Pesquera · Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
